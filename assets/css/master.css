@@ -1,0 +1,28 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  margin: 0 auto;
+  width: 85%;
+}
+
+.nav-back{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 130px;
+  width: 100vw;
+  background-color: #009688;
+}
+
+.body-back{
+  position: fixed;
+  top: 130px;
+  left: 0;
+  height: calc(100vh - 130px);
+  width: 100vw;
+  background-color: #D9DBD4;
+}
