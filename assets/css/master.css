@@ -60,6 +60,7 @@ aside{
   height: 100%;
 }
 
+/* nav utente left */
 .nav-left{
   height: 60px;
   margin-top: 30px;
@@ -89,4 +90,62 @@ aside{
 .icons i{
   margin-right: 10px;
 }
+/* nav utente left */
+
+/* notifiche */
+.notifiche{
+  height: 90px;
+  background-color: #9DE1FE;
+  display: flex;
+  align-items: center;
+}
+
+.bell i{
+  margin-left: 10px;
+  font-size: 20px;
+  padding: 17px 15px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: #9DE1FE;
+}
+
+.bell-text{
+  margin-left: 10px;
+}
+
+.bell-text p{
+  font-size: 15px;
+}
+
+.bell-text a{
+  font-size: 14px;
+  color: #848484;
+}
+/* notifiche */
+
+/* ricerca */
+.search-contact{
+  height: 50px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-contact input{
+  width: 300px;
+  text-align: center;
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px solid #000;
+  margin-right: 10px;
+}
+
+.search-contact i{
+  position: relative;
+  left: 20px;
+}
+
+
+/* ricerca */
 /* main */
