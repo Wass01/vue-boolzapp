@@ -9,10 +9,12 @@
   width: 85%;
 }
 
+/* background pagina */
 .nav-back{
   position: fixed;
   top: 0;
   left: 0;
+  z-index: -1;
   height: 130px;
   width: 100vw;
   background-color: #009688;
@@ -22,7 +24,69 @@
   position: fixed;
   top: 130px;
   left: 0;
+  z-index: -1;
   height: calc(100vh - 130px);
   width: 100vw;
   background-color: #D9DBD4;
 }
+/* background pagina */
+
+/* header */
+header{
+  width: calc(85% - 400px);
+  position: fixed;
+  top: 30px;
+  margin-left: 400px;
+  z-index: 1;
+}
+
+.nav-right{
+  height: 60px;
+
+  background-color: #EDEDED;
+  display: flex;
+  align-items: center;
+}
+/* header */
+
+/* main */
+main{
+  height: calc(100vh - footer);
+  display: flex;
+}
+
+aside{
+  width: 400px;
+  height: 100%;
+}
+
+.nav-left{
+  height: 60px;
+  margin-top: 30px;
+  background-color: #EDEDED;
+  border-right: 1px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.utente{
+  display: flex;
+  align-items: center;
+}
+
+.utente  img{
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.utente  p{
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.icons i{
+  margin-right: 10px;
+}
+/* main */
