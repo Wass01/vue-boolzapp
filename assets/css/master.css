@@ -153,11 +153,23 @@ aside{
   height: calc(100% - 140px);
 }
 
-.lista-contatti{
+.lista-contatti li{
   list-style: none;
   height: 70px;
   background-color: #fff;
   border-bottom: 1px solid #848484;
+  display: flex;
+  align-items: center;
+}
+
+.lista-contatti li img{
+  height: 50px;
+  margin-left: 10px;
+  border-radius: 50%;
+}
+
+.info-contact{
+  margin-left: 10px;
 }
 
 /* contact */
