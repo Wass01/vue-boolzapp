@@ -62,7 +62,7 @@
 
           <div class="contact">
             <ul class="lista-contatti">
-              <li v-for="user in contacts">
+              <li v-for="(user, index) in contacts">
                 <img :src="'./assets/img/avatar' + user.avatar + '.jpg'" alt="">
                 <div class="info-contact">
                   <p> {{ user.name }} </p>
