@@ -62,7 +62,10 @@
 
           <div class="contact">
             <ul class="lista-contatti">
-              <li v-for="(user, index) in contacts">
+              <li
+              v-for="(user, index) in contacts"
+              @click="selectContact"
+              >
                 <img :src="'./assets/img/avatar' + user.avatar + '.jpg'" alt="">
                 <div class="info-contact">
                   <p> {{ user.name }} </p>
@@ -79,7 +82,7 @@
             v-for="message in contacts[index].messages"
             :class="message.status">
                <span>{{ message.text }}</span>
-               <span id="date">{{ getTime(message.date) }}</span>
+               <span id="date">{{ message.date }}</span>
             </div>
 
             <!-- <div class="left-message">ddd</div> -->
