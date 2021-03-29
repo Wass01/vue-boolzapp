@@ -45,6 +45,23 @@ header{
   background-color: #EDEDED;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+.chat-utent{
+  display: flex;
+  align-items: center;
+}
+
+.chat-utent img{
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.chat-utent  p{
+  font-size: 14px;
+  margin-left: 10px;
 }
 /* header */
 
@@ -54,6 +71,7 @@ main{
   display: flex;
   margin-top: 20px;
 }
+
 
 aside{
   width: 400px;
@@ -150,6 +168,7 @@ aside{
 /* contact */
 .contact{
   background-color: #fff;
+  overflow-y: auto;
   height: calc(100% - 140px);
 }
 
@@ -171,13 +190,64 @@ aside{
 .info-contact{
   margin-left: 10px;
 }
-
 /* contact */
 
-.background-chat{
+.body-main{
+  overflow-y: auto;
   background-image: url('../img/mine.jpg');
   width: calc(100% - 400px);
+  margin-top: 60px;
 }
+
+/* chat */
+/* .right-message{
+  background-color: #DCF8C6;
+  padding: 10px 15px;
+  text-align: center;
+  border-radius: 12px;
+  float: right;
+  clear: both;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+.left-message{
+  background-color: #ffffff;
+  padding: 10px 15px;
+  text-align: center;
+  border-radius: 12px;
+  float: left;
+  clear: both;
+  margin: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+} */
+
+.chat div.sent{
+  background-color: #DCF8C6;
+  float: right;
+  clear: both;
+}
+
+.chat div.received{
+  background-color: #ffffff;
+  float: left;
+  clear: both;
+}
+
+.message{
+  padding: 10px 15px;
+  text-align: center;
+  border-radius: 12px;
+  margin: 10px;
+}
+
+#date{
+  margin-left: 15px;
+  font-size: 12px;
+}
+
+/* chat */
 /* main */
 
 /* footer */

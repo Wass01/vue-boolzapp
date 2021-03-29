@@ -17,12 +17,14 @@
       <header>
           <div class="nav-right">
             <div class="chat-utent">
-
+              <img src="./assets/img/avatar_1.jpg" alt="mioavatar">
+              <p>Michele</p>
             </div>
 
             <div class="icons">
               <i class="fas fa-search"></i>
-
+              <i class="fas fa-paperclip"></i>
+              <i class="fas fa-ellipsis-v"></i>
             </div>
           </div>
       </header>
@@ -60,19 +62,30 @@
 
           <div class="contact">
             <ul class="lista-contatti">
-              <li v-for="utent in contacts">
-                <img :src="'./assets/img/avatar' + utent.avatar + '.jpg'" alt="">
+              <li v-for="user in contacts">
+                <img :src="'./assets/img/avatar' + user.avatar + '.jpg'" alt="">
                 <div class="info-contact">
-                  <h4> {{ utent.name }} </h4>
-                  <p> {{  }} </p>
+                  <h4> {{ user.name }} </h4>
                 </div>
               </li>
             </ul>
           </div>
         </aside>
 
-        <div class="background-chat">
+        <div class="body-main">
+          <div class="chat">
+            <div class="message"
+            v-for="message in contacts[index].messages"
+            :class="message.status">
+               <span>{{ message.text }}</span>
+               <span id="date">{{ getTime(message.date) }}</span>
+            </div>
+
+            <!-- <div class="left-message">ddd</div> -->
+          </div>
         </div>
+
+
       </main>
 
       <footer>
