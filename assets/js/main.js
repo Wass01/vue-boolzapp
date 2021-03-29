@@ -18,7 +18,14 @@ let app = new Vue({
       return lastMessage[lastMessage.length - 1];
     },
 
-    selectContact: function(){
+    selectContact: function(user, i){
+      // prova sbagliata
+    // if (this.index < contacts.length) {
+    //   this.index++;
+    // }
+
+
+
 
     }
   }

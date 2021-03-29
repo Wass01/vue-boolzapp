@@ -17,8 +17,8 @@
       <header>
           <div class="nav-right">
             <div class="chat-utent">
-              <img src="./assets/img/avatar_1.jpg" alt="mioavatar">
-              <p>Michele</p>
+              <img :src="'./assets/img/avatar' + contacts[index].avatar + '.jpg'" alt="">
+              <p>{{contacts[index].name}}</p>
             </div>
 
             <div class="icons">
@@ -80,12 +80,11 @@
           <div class="chat">
             <div class="message"
             v-for="message in contacts[index].messages"
-            :class="message.status">
+            :class="message.status"
+            >
                <span>{{ message.text }}</span>
                <span id="date">{{ message.date }}</span>
             </div>
-
-            <!-- <div class="left-message">ddd</div> -->
           </div>
         </div>
 
