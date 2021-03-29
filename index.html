@@ -63,12 +63,12 @@
           <div class="contact">
             <ul class="lista-contatti">
               <li
-              v-for="(user, index) in contacts"
+              v-for="(contact, index) in contacts"
               @click="selectContact"
               >
-                <img :src="'./assets/img/avatar' + user.avatar + '.jpg'" alt="">
+                <img :src="'./assets/img/avatar' + contact.avatar + '.jpg'" alt="">
                 <div class="info-contact">
-                  <p> {{ user.name }} </p>
+                  <p> {{ contact.name }} </p>
                   <p id="lastMsg"> {{ lastMes(index).text }} </p>
                 </div>
               </li>
