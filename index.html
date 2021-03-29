@@ -65,7 +65,8 @@
               <li v-for="user in contacts">
                 <img :src="'./assets/img/avatar' + user.avatar + '.jpg'" alt="">
                 <div class="info-contact">
-                  <h4> {{ user.name }} </h4>
+                  <p> {{ user.name }} </p>
+                  <p id="lastMsg"> {{ lastMes(index).text }} </p>
                 </div>
               </li>
             </ul>

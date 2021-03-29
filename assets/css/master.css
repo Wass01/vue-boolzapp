@@ -190,6 +190,15 @@ aside{
 .info-contact{
   margin-left: 10px;
 }
+
+#lastMsg{
+  font-size: 13px;
+  color: #848484;
+}
+
+.lista-contatti li.active{
+  background-color: #bfbfbf;
+}
 /* contact */
 
 .body-main{
@@ -200,29 +209,6 @@ aside{
 }
 
 /* chat */
-/* .right-message{
-  background-color: #DCF8C6;
-  padding: 10px 15px;
-  text-align: center;
-  border-radius: 12px;
-  float: right;
-  clear: both;
-  margin-right: 20px;
-  margin-top: 10px;
-}
-
-.left-message{
-  background-color: #ffffff;
-  padding: 10px 15px;
-  text-align: center;
-  border-radius: 12px;
-  float: left;
-  clear: both;
-  margin: 20px;
-  margin-right: 20px;
-  margin-top: 10px;
-} */
-
 .chat div.sent{
   background-color: #DCF8C6;
   float: right;

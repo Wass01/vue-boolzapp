@@ -11,6 +11,11 @@ let app = new Vue({
       let minutes = dateTime.getMinutes();
 
       return `${hours}:${minutes}`
+    },
+
+    lastMes: function(i) {
+      let lastMessage = contacts[i].messages;
+      return lastMessage[lastMessage.length - 1];
     }
   }
 });
