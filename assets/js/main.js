@@ -19,18 +19,29 @@ let app = new Vue({
     },
 
     addMess: function() {
+      const indexAct = this.index;
       const date = dayjs().format('DD/MM/YYYY HH:mm:ss');
+      // inserimento messaggio
       if(this.mesText != ''){
           const chat = {
             date,
             text: this.mesText,
             status: 'sent',
           }
-          this.contacts[this.index].messages.push(chat);
+          this.contacts[indexAct].messages.push(chat);
           this.mesText = '';
         }
-    }
 
-
-  }
+      setTimeout(() => {
+        const date = dayjs().format('DD/MM/YYYY HH:mm:ss');
+        // risposta utente
+          const chat = {
+            date,
+            text: 'ok',
+            status: 'received',
+          }
+          this.contacts[indexAct].messages.push(chat);
+       }, 1000);
+    },
+  },
 });
