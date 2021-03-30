@@ -18,16 +18,6 @@ let app = new Vue({
       return lastMessage[lastMessage.length - 1];
     },
 
-    selectContact: function(contact, i){
-    this.contacts.forEach((contact, i) => {
-      contact.visible = false;
-    });
 
-    let index = this.contacts.indexOf(contact);
-    this.contacts[index].visible = true;
-
-
-
-    }
   }
 });
