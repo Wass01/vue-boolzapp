@@ -57,7 +57,11 @@
 
           <div class="search-contact">
             <i class="fas fa-search"></i>
-            <input type="text" placeholder="Cerca contatto">
+            <input type="text"
+            placeholder="Cerca contatto"
+            v-model="searchContact"
+            @keyup="search"
+            >
           </div>
 
           <div class="contact">
@@ -66,6 +70,7 @@
               v-for="(contact, i) in contacts"
               :class="(i == index) ? 'active' : ''"
               @click="index = i"
+              v-if="contact.visible"
               >
                 <img :src="'./assets/img/avatar' + contact.avatar + '.jpg'" alt="">
                 <div class="info-contact">

@@ -3,8 +3,10 @@ let app = new Vue({
   data: {
     index: 0,
     mesText: '',
+    searchContact: '',
     contacts: contacts,
   },
+
   methods: {
     // getTime: function (date){
     //   let dateTime = new Date(date);
@@ -43,5 +45,17 @@ let app = new Vue({
           this.contacts[indexAct].messages.push(chat);
        }, 1000);
     },
+
+    search: function() {
+      this.contacts.forEach((item) => {
+        let searchContacts = this.searchContact.toLowerCase();
+
+        if(item.name.toLowerCase().includes(searchContacts)){
+          item.visible = true;
+        } else {
+          item.visible = false;
+        }
+      });
+    }
   },
 });
