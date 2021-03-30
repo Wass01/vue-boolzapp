@@ -82,4 +82,26 @@ const contacts = [
         },
       ],
     },
+    {
+      name: "Davide",
+      avatar: "_5",
+      visible: true,
+      messages: [
+        {
+          date: "27/03/2021 20:30:42",
+          text: "Giochiamo alla play stasera o usciamo?",
+          status: "sent",
+        },
+        {
+          date: "27/03/2021 20:41:17",
+          text: "Usciamo",
+          status: "received",
+        },
+        {
+          date: "27/03/2021 20:46:31",
+          text: "Va bene, ci vediamo tra 10 minuti",
+          status: "sent",
+        },
+      ],
+    },
 ];
