@@ -251,7 +251,7 @@ footer{
 }
 
 footer input{
-  width: 750px;
+  width: 70%;
   padding: 10px;
   border: none;
   border-radius: 15px;
@@ -264,4 +264,16 @@ footer i{
 
 .active{
   background-color: #848484;
+}
+
+/* responsive */
+@media all and (max-width: 992px)
+and (min-width: 768px){
+  .message{
+    width: 50%;
+  }
+}
+
+@media all and (max-width: 768px){
+
 }
