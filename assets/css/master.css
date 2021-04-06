@@ -270,10 +270,68 @@ footer i{
 @media all and (max-width: 992px)
 and (min-width: 768px){
   .message{
-    width: 50%;
+    width: 55%;
+  }
+
+  .body-main{
+    width: calc(100% - 200px);
+  }
+
+  header, footer{
+    width: calc(85% - 200px);
+    margin-left: 200px;
+  }
+
+  aside{
+    width: 200px;
+    height: 100%;
   }
 }
 
 @media all and (max-width: 768px){
+  .message{
+    width: 50%;
+  }
+
+  .body-main{
+    width: calc(100% - 150px);
+  }
+
+  header, footer{
+    width: calc(85% - 150px);
+    margin-left: 150px;
+  }
+
+  aside{
+    width: 150px;
+    height: 100%;
+  }
+
+  aside .icons i,
+  header .icons i,
+  .bell-text{
+    display: none;
+  }
+
+  .lista-contatti li img,
+  .lista-contatti li #lastMsg{
+    display: none;
+  }
+
+  .lista-contatti li{
+    justify-content: center;
+  }
+
+  .notifiche{
+    justify-content: center;
+  }
+
+  .search-contact input{
+    width: 100px;
+  }
+
+  .search-contact i{
+    display: none;
+  }
 
 }
